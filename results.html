@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Query Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .result {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #e2e2e2;
+            border-radius: 5px;
+        }
+        .result h3 {
+            margin: 0;
+            padding: 0;
+            font-size: 1.2em;
+            color: #333;
+        }
+        .result p {
+            margin: 5px 0 0;
+            padding: 0;
+            color: #555;
+        }
+        .result .score {
+            font-size: 0.9em;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Query Results</h1>
+        {% for result in results %}
+        <div class="result">
+            <h3>{{ result.question }}</h3>
+            <p>{{ result.answer }}</p>
+            <p class="score">Relevance Score: {{ result.score }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
