@@ -17,10 +17,7 @@ This project implements a document query system using FastAPI, a modern web fram
 * asyncio: For asynchronous programming.
 
 2. Remove_timestamps(text): Removes timestamps from text using regular expressions.
-get_documents(doc_paths): Reads .docx files, extracts question-answer pairs, and returns a list of documents.
-Document Processing
 
-
-3. Loads the Sentence Transformer model (msmarco-bert-base-dot-v5).
+3. Loads the Sentence Transformer model **(msmarco-bert-base-dot-v5)**.
 Encodes the documents into embeddings using the model and stores these embeddings for future queries.
 Runs the model loading and encoding asynchronously to improve performance.
