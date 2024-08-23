@@ -1,6 +1,6 @@
 # Endometriosis_Question_Answering
 ## Overview:
-This project implements a document query system using FastAPI, a modern web framework for building APIs with Python 3.7+ based on standard Python-type hints. The system leverages a pre-trained model from the Sentence Transformers library to provide semantic search capabilities. Users can query documents, and the system returns the most relevant answers based on the query.
+This project implements a document query system using FastAPI, a modern web framework for building APIs. The system leverages a pre-trained model from the Sentence Transformers library to provide semantic search capabilities. Users can query documents, and the system returns the most relevant answers based on the query.
 
 ## Key Components
 1. Libraries and Environment Setup
